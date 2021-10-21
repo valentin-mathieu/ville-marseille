@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600;800&family=Quicksand:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+body {
+    background-color : white;
+    height : 1500px;
+    padding: 0px;
+    margin: 0px;
+}
 
 header {
     background-image: url(img_header.jpg);
@@ -7,20 +14,101 @@ header {
     border-radius: 0 0 85% 85% / 20%;
 }
 
-body {
-    background-color : white;
-    height : 1500px;
-    padding: 0px;
-    margin: 0px;
+nav {
+    font-family: 'Roboto Condensed';
+    padding-left: 130px;
+    padding-top: 60px;
 }
 
 nav > ul {
     margin: 0px;
     padding: 0px;
+    font-size: 40px;
+}
+
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul > li {
+    float: left;
+    position:relative;
+}
+
+nav > ul > li > a {
+    padding: 0px 30px;
+    color: #1b93b8;
+    text-shadow: 
+    0 0 36px rgba(179, 182, 182, 0.92),
+    0 0 22px rgb(206, 211, 211),
+    0 0 12px rgba(225, 230, 230, 0.92),
+    0 0 6px rgba(250, 254, 255, 0.92);
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .submenu {
+    display: inline-flex;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.menu {
+    text-align: center;
+}
+.submenu {
+    display: none;
+    background-color: rgba(143, 140, 140, 0.233);
+    border-radius: 10px;
+}
+
+.submenu li {
+    border-right: 2.5px solid rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.submenu li a {
+    padding: 0px 30px;
+    font-size: 18px;
+    color: rgb(88, 166, 202);
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu:hover {
+    border-top: 5px solid rgb(113, 116, 114);
+    background-color: rgba(219,133,196,0.45);
+    padding-bottom: 89px;
+    border-radius: 10px;
+}
+
+.menu:hover > a {
+    color: rgb(255, 255, 255);
 }
 
 
+.submenu li:hover {
+    background-color: rgba(0,0,0,0.40);
+    border-radius: 10px;
+}
 
+.submenu li:hover a {
+    color: rgb(181, 223, 218);
+}
 
 #mouette {
     position: absolute;
@@ -33,4 +121,67 @@ nav > ul {
     position: absolute;
     left: 27%;
     opacity: 95%;
+}
+
+
+span {opacity:0;}
+.l1  {animation:letters 0.05s ease 1050ms forwards;}
+.l2  {animation:letters 0.05s ease 1100ms forwards;}
+.l3  {animation:letters 0.05s ease 1150ms forwards;}
+.l4  {animation:letters 0.05s ease 1200ms forwards;}
+.l5  {animation:letters 0.05s ease 1250ms forwards;}
+.l6  {animation:letters 0.05s ease 1300ms forwards;}
+.l7  {animation:letters 0.05s ease 1350ms forwards;}
+.l8  {animation:letters 0.05s ease 1400ms forwards;}
+.l9  {animation:letters 0.05s ease 1450ms forwards;}
+.l10 {animation:letters 0.05s ease 1500ms forwards;}
+.l11 {animation:letters 0.05s ease 1550ms forwards;}
+.l12 {animation:letters 0.05s ease 1600ms forwards;}
+.l13 {animation:letters 0.05s ease 1650ms forwards;}
+.l14 {animation:letters 0.05s ease 1700ms forwards;}
+.l15 {animation:letters 0.05s ease 1750ms forwards;}
+.l16 {animation:letters 0.05s ease 1800ms forwards;}
+.l17 {animation:letters 0.05s ease 1850ms forwards;}
+.l18 {animation:letters 0.05s ease 1900ms forwards;}
+.l19 {animation:letters 0.05s ease 1950ms forwards;}
+.l20 {animation:letters 0.05s ease 2000ms forwards;}
+.l21 {animation:letters 0.05s ease 2050ms forwards;}
+.l22 {animation:letters 0.05s ease 2100ms forwards;}
+.l23 {animation:letters 0.05s ease 2150ms forwards;}
+.l24 {animation:letters 0.05s ease 2200ms forwards;}
+.l25 {animation:letters 0.05s ease 2250ms forwards;}
+.l26 {animation:letters 0.05s ease 2300ms forwards;}
+.l27 {animation:letters 0.05s ease 2350ms forwards;}
+.l28 {animation:letters 0.05s ease 2400ms forwards;}
+.l29 {animation:letters 0.05s ease 2450ms forwards;}
+.l30 {animation:letters 0.05s ease 2500ms forwards;}
+.l31 {animation:letters 0.05s ease 2550ms forwards;}
+.l32 {animation:letters 0.05s ease 2600ms forwards;}
+.l33 {animation:letters 0.05s ease 2650ms forwards;}
+.l34 {animation:letters 0.05s ease 2700ms forwards;}
+.l35 {animation:letters 0.05s ease 2750ms forwards;}
+.l36 {animation:letters 0.05s ease 2800ms forwards;}
+.l37 {animation:letters 0.05s ease 2850ms forwards;}
+.l38 {animation:letters 0.05s ease 2900ms forwards;}
+.l39 {animation:letters 0.05s ease 2950ms forwards;}
+.l40 {animation:letters 0.05s ease 3000ms forwards;}
+.l41 {animation:letters 0.05s ease 3050ms forwards;}
+.l42 {animation:letters 0.05s ease 3100ms forwards;}
+.l43 {animation:letters 0.05s ease 3150ms forwards;}
+.l44 {animation:letters 0.05s ease 3200ms forwards;}
+.l45 {animation:letters 0.05s ease 3250ms forwards;}
+.l46 {animation:letters 0.05s ease 3300ms forwards;}
+.l47 {animation:letters 0.05s ease 3350ms forwards;}
+
+@keyframes letters {
+	0% {opacity:0;}
+	100% {opacity:100;}
+}
+
+.title {
+    font-family: 'Quicksand';
+    color: #2d719e;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 120px;
 }
