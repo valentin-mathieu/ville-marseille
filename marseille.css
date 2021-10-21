@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+header {
+    background-image: url(img_header.jpg);
+    width: 100%;
+    height: 250px;
+    border-radius: 95% 95% 85% 85% / 30%;
+}
+
+body {
+    background-color : white;
+    height : 1500px;
+    padding: 0;
+    margin: 0;
+}
+
+#mouette {
+    position: absolute;
+    right: 44.5%;
+    opacity: 50%;
+    padding-top: 8px;
+}
+
+#logo {
+    position: absolute;
+    left: 27%;
+    opacity: 95%;
+}
