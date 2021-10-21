@@ -1,2 +1,229 @@
-BLA  LA BLA
-hasta leugooo
+body {
+    width: 100%;
+    position: absolute;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+main {
+
+    width: 80%;
+    margin: 0% auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    
+       
+}
+
+
+.mconteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    width:calc(80% - 0px);
+    margin:auto;
+    background-color: blanchedalmond;
+    margin-bottom:50px;
+}
+
+.mblocn {
+    width: 95%;
+    text-align: right;
+    
+    
+}
+
+.mbloccist {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.mblocci {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px;
+}
+
+.minibloc {
+    padding:5px;
+    margin:5px;
+    text-align: left;
+}
+
+.mbloctexte {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right:18px;
+    margin-left:20px;
+    font-size: 15px;
+    padding-bottom:0px;
+
+}
+
+/*BLOC EXPOS ARTICLES ET RESEAUX */
+
+.mblocear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*BLOC ARTICLES ET RESEAUX */
+
+.mblocar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width:700px;
+    height:auto;
+    width:500px;
+}
+
+/*BLOC RESEAUX*/
+
+.mblocreseaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logolien {
+    height: 50px;
+    width:50px;
+    border-radius:20%;
+}
+
+/* BLOC EXPOSITIONS  */
+
+.mblocexpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;;
+    max-width:700px;
+    height:auto;
+    width:500px;
+    position: relative;
+    right:15px;
+}
+
+.imgexpo {
+    max-width:  300px;
+    height: auto;
+    width:230px;
+    margin:3px;
+    border-radius:5%;
+        /* ZOOM QUAND MOUSEOVER TEMPS */
+     -webkit-transition: all 1s ease; 
+     -moz-transition: all 1s ease; 
+     -ms-transition: all 1s ease; 
+     -o-transition: all 1s ease; 
+     transition: all 1s ease;
+}
+
+
+
+ 
+.imgexpo:hover {
+
+    max-width:  300px;
+    height: auto;
+    width:230px;
+    margin:3px;
+    border-radius:5%;
+    /* ZOOM QUAND MOUSEOVER SCALE */
+    -webkit-transform:scale(1.2); 
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2); 
+    -o-transform:scale(1.2); 
+    transform:scale(1.2);
+}
+
+/*BLOC ARTICLES*/
+
+.mblocarticles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS ANIMATION SLIDE MUCEM */
+.slider {
+    width: 400px;
+    height: 240px;
+    overflow: hidden;
+    border-radius:5%;
+    transition: all 1s ease;
+
+}
+
+
+.slider:hover {
+    width: 400px;
+    height: 240px;
+    overflow: hidden;
+    border-radius:5%;
+    transform:scale(1.2);
+
+}
+
+.slides {
+    width: calc(400px * 3);
+    animation: glisse 12s infinite;
+}
+
+
+.slide {
+    float: left;
+    width: 400px;
+    height: 240px auto;
+}
+
+.imgslide {
+    width:400px;
+    height:240px;
+    transition: all 12s ease;
+}
+
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-400px);
+    }
+
+    66% {
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
