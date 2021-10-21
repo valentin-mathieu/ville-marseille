@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.haut{
+    background: url(./Assets/bg1.jpg) center/cover;
+    height: 100vh;
+    margin: 20px 0px;
+    text-align: center;
+    color: whitesmoke;
+    font-family:"Scheherazade New" ;
+}
+.haut h2{
+    font-size: 1.5rem;
+}
+.haut h1{
+    padding-top: 250px;
+}
