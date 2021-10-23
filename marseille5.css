@@ -5,15 +5,21 @@ body {
     padding: 0px;
     text-align: center;
     justify-content: center;
+    background-image:url('musees_assets/marseillepeinture.jpg');
+    background-position: fixed;
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 main {
 
-    width: 80%;
+    width: 100%;
     margin: 0% auto;
     height: auto;
     text-align: center;
     justify-content: center;
+    
+    
     
        
 }
@@ -24,10 +30,10 @@ main {
     flex-direction: column;
     justify-content: space-around;
     padding: 20px;
-    width:calc(80% - 0px);
+    width:calc(65% - 0px);
     margin:auto;
-    background-color: blanchedalmond;
-    margin-bottom:50px;
+    background-color:rgba(255, 255, 255, 0.8);
+    padding-top:100px;
 }
 
 .mblocn {
@@ -44,19 +50,38 @@ main {
     margin: 10px;
 }
 
+.mblocciexpr {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    
+}
+
+.mbloccir {
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    margin:0px;
+}
 
 .mblocci {
     display: flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
     margin: 10px;
+    max-width:100%;
+    height:auto;
+    width:100%;
 }
+
 
 .minibloc {
     padding:5px;
     margin:5px;
     text-align: left;
+    width:auto;
 }
 
 .mbloctexte {
@@ -64,35 +89,17 @@ main {
     padding-left: 30px;
     padding-right:18px;
     margin-left:20px;
-    font-size: 15px;
-    padding-bottom:0px;
 
 }
 
-/*BLOC EXPOS ARTICLES ET RESEAUX */
 
-.mblocear {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
-/*BLOC ARTICLES ET RESEAUX */
-
-.mblocar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width:700px;
-    height:auto;
-    width:500px;
-}
 
 /*BLOC RESEAUX*/
 
 .mblocreseaux {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -110,9 +117,7 @@ main {
     flex-wrap: wrap;;
     max-width:700px;
     height:auto;
-    width:500px;
-    position: relative;
-    right:15px;
+    width:50%;
 }
 
 .imgexpo {
@@ -128,6 +133,28 @@ main {
      -o-transition: all 1s ease; 
      transition: all 1s ease;
 }
+
+/*BLOC EXPO FRICHE */
+
+#blocexpofriche  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;;
+    max-width:1060px;
+    height:auto;
+    width:500px;
+    position: relative;
+    right:15px;
+}
+
+#expofriche {
+    max-width:700px;
+    height: auto;
+    width:480px;
+}
+
+
+
 
 
 
