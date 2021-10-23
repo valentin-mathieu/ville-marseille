@@ -27,6 +27,7 @@ main {
 
 .mconteneur {
     display: flex;
+    text-align:center;
     flex-direction: column;
     justify-content: space-around;
     padding: 20px;
@@ -34,11 +35,35 @@ main {
     margin:auto;
     background-color:rgba(255, 255, 255, 0.8);
     padding-top:100px;
+    font-family:'Zen Antique Soft';
 }
 
 .mblocn {
     width: 95%;
     text-align: right;
+    font-weight:800;
+    font-size:large;
+    font-style:italic;
+    margin-bottom:50px;
+}
+
+.macronyme {
+    font-size:50px;
+    font-style:normal;
+}
+
+.mnomcomplet {
+    font-size:25px;
+    font-style:normal;
+}
+
+.mintrobloc {
+    text-align:justify;
+    position:relative;
+    top:15px;
+    left:30px;
+    width:80%;
+    border: black 5px
     
     
 }
@@ -81,14 +106,28 @@ main {
     padding:5px;
     margin:5px;
     text-align: left;
-    width:auto;
+    max-width:100%;
+    height:auto;
+    width:50%;
+    font-size:12px;
 }
 
 .mbloctexte {
+    padding: 0%;
     text-align: justify;
-    padding-left: 30px;
-    padding-right:18px;
     margin-left:20px;
+    font-size:14px;
+    position:relative;
+    bottom:17px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:0px;
+    max-width:100%;
+    height:auto;
+    width:100%;
+
+   
 
 }
 
@@ -101,6 +140,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position:relative;
+    margin-bottom:0px;
+    
 }
 
 .logolien {
