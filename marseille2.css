@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scheherazade+New:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,12 +10,63 @@
     height: 100vh;
     margin: 20px 0px;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     font-family:"Scheherazade New" ;
 }
 .haut h2{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .haut h1{
-    padding-top: 260px;
+    padding-top: 280px;
+    font-size: 2.7rem;
 }
+.global{
+    padding: 20px;
+}
+
+.listeCal ul li{
+    display: inline;
+}
+.listeCal ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: "Bebas Neue";
+    font-size: 1.4rem;
+    margin: 0px 20px;
+    background: #40e1d991;
+}
+.listeCal a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #7f8630;
+}
+.listeCal a:hover{  
+    font-size: 1.6rem;
+    color: #7f8630;
+}
+.global h3{
+    padding: 30px;
+}
+.global h4{
+    text-align: center;
+    margin: 30px;
+    font-size: 1.7rem;
+}
+.acces-sugiton{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+.global p{
+    width: 50%;
+    font-family: "Lato";
+    font-size: 1.1rem;   
+    line-height: 1.7rem;
+}
+
+.map-sugiton:hover{
+    height: 300px;
+    cursor: pointer;
+}
+
