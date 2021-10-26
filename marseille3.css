@@ -1,1 +1,30 @@
-.
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.haut{
+    height: 100vh;
+    background: url(./Assets/bg2.jpg) center/cover fixed;
+}
+.mid{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    padding: 20px;
+    line-height: 2rem;
+}
+.mid h2{
+    text-align: center;
+    padding: 30px;
+
+}
+.haut h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 2.9rem;
+    line-height: 4rem;
+}
+.choix{
+    font-size: 2.5rem;
+}
