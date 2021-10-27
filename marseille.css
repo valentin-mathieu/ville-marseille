@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600;800&family=Quicksand:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Noto+Serif+Display:wght@600;800&family=Quicksand:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+
+
 body {
-    background-color : white;
+    background-color : rgba(240, 238, 238, 0.562);
     height : 1500px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -38,12 +42,7 @@ nav > ul > li {
 
 nav > ul > li > a {
     padding: 0px 30px;
-    color: #1b93b8;
-    text-shadow: 
-    0 0 36px rgba(179, 182, 182, 0.92),
-    0 0 22px rgb(206, 211, 211),
-    0 0 12px rgba(225, 230, 230, 0.92),
-    0 0 6px rgba(250, 254, 255, 0.92);
+    color: #2d719e;
 }
 
 nav li {
@@ -69,7 +68,7 @@ nav li:hover .submenu {
 }
 .submenu {
     display: none;
-    background-color: rgba(143, 140, 140, 0.233);
+    background-color: rgb(114, 113, 113, 0.2);
     border-radius: 10px;
 }
 
@@ -92,8 +91,9 @@ nav li:hover .submenu {
 .menu:hover {
     border-top: 5px solid rgb(113, 116, 114);
     background-color: rgba(219,133,196,0.45);
-    padding-bottom: 89px;
+    padding-bottom: 148px;
     border-radius: 10px;
+    margin-top: -60px;
 }
 
 .menu:hover > a {
@@ -180,8 +180,189 @@ span {opacity:0;}
 
 .title {
     font-family: 'Quicksand';
-    color: #2d719e;
+    color: #5886a5;
     font-size: 35px;
     text-align: center;
-    padding-top: 120px;
+    margin-top: 110px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 15px;
+    border: 4px dotted #d6d5d6;
+    border-radius: 50px;
+    padding: 10px 10px;
+    background-color: #06abf72c;
+}
+
+.accueil_intro {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    color: #6ad2f5;
+    text-shadow: 
+    0 0 2.5px rgba(180, 178, 178, 0.92);
+    animation-name: anim_accueil;
+    animation-duration: 3500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1
+}
+
+@keyframes anim_accueil{
+    0%{
+    transform: translateY(10vh);
+    opacity: 0;
+    }
+    100%{
+    transform: translateY(0px);
+    opacity: 1;
+    }
+}
+
+.accueil_box {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    height: 306px;
+    width: 230px;
+    transform-style: preserve-3d;
+    animation: carroussel3d 20s linear infinite;
+    margin-left: 43%;
+    margin-top: 120px;
+}
+
+.img_box {
+    border: 2px rgb(197, 195, 195) solid;
+    opacity: 85%;
+}
+
+@keyframes carroussel3d {
+    0% {
+        transform: perspective(1500px) rotateY(0deg)
+    }
+
+    100% {
+        transform: perspective(1500px) rotateY(360deg)
+    }
+}
+
+.accueil_box div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--v) *45deg)) translateZ(300px);
+}
+
+main li {
+    list-style-type: none;
+}
+
+.accueil_anecdotes {
+    font-family: 'Quicksand';
+    text-align: center;
+    color: rgb(29, 106, 170);
+    opacity: 80%;
+    border: 7px double lightblue;
+    margin-top: 140px;
+    padding: 20px 200px 20px 200px;
+}
+
+#accueil_titre2 {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 30px;
+    color: rgb(130, 131, 131);
+    text-shadow: 
+    0 0 6px rgb(48, 187, 230);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 3px solid rgb(211, 211, 211);
+}
+
+.accueil_media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accueil_actus {
+    height: 270px;
+    width: 195px;
+    border-radius: 10px;
+}
+
+.accueil_actus:hover {
+    box-shadow: 
+    0 0 10px rgb(48, 187, 230);
+}
+
+footer {
+    background-image: url(img_footer.jpg);
+    width: 100%;
+    height: 240px;
+    border-radius: 85% 85% 0 0 / 20%;
+    margin-top: 100px;
+}
+
+#titre_footer {
+    font-family: 'Quicksand';
+    font-size: 28px;
+    color: #28677e;
+    text-shadow: 
+    0 0 3px white,
+    0 0 6px white;
+    padding-left: 58.75%;
+    padding-top: 35px;
+    padding-right: 0px;
+    height: 30px;
+}
+
+.footer_logos {
+    margin-bottom: -20px;
+    padding-left: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icones_medias {
+    width: 70px;
+    height: 70px;
+}
+
+.icones_medias:hover {
+    box-shadow: 0 0 12px white;
+    background-color: rgb(218, 218, 218);
+}
+
+#logo_marseille {
+    position: absolute;
+    left: 0;
+    padding-bottom: 0px;
+    padding-top: 3%;
+}
+
+#accueil_boutonfin {
+    background-color: white;
+    color: #40ACD4;
+    border: pink solid;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 50px;
+    justify-content: center;
+    margin-left: 27%;
+    opacity: 90%;
+}
+
+#accueil_boutonfin:hover {
+    background-color: rgb(221, 219, 219);
+    box-shadow: 
+    0 0 6px white,
+    0 0 12px white;
+    cursor: pointer;
 }
