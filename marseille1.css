@@ -54,6 +54,8 @@ main {
 
     width: 100%;
     margin: 0% auto;
+    margin-top:80px;
+    margin-bottom:-140px;
     padding:0%;
     height: auto;
     text-align: center;
@@ -265,3 +267,4 @@ main {
     padding-top:35px;
     padding-left:20px;
 }
+

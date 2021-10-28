@@ -63,6 +63,8 @@ main {
     height: auto;
     text-align: center;
     justify-content: center;
+    margin-top:80px;
+    margin-bottom:-80px;
     
     
     
