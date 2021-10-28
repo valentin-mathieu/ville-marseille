@@ -38,17 +38,6 @@
 
 /* BODY & MAIN STRUCTURE*/
 
-body {
-    width: 100%;
-    position: absolute;
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    justify-content: center;
-    background-position: fixed;
-    background-size:cover;
-    background-attachment: fixed;
-}
 
 main {
 
