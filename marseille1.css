@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scheherazade+New:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500&display=swap');
+
+
+/*NAV BAR */
+
+.hfirst {
+    font-family:'Zen Antique Soft';
+}
+
+.hlisteCal ul li{
+    display: inline;
+}
+
+.hlisteCal ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: "Zen Antique Soft'";
+    font-size: 1.4rem;
+    font-weight:900;
+    margin: 0px;
+    background:whitesmoke;
+    margin-bottom:100px;
+}
+
+.hlisteCal a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.hlisteCal a:hover{  
+    font-size: 1.6rem;
+    color:black;
+}
+
+/* BODY & MAIN STRUCTURE*/
+
+
+main {
+
+    width: 100%;
+    margin: 0% auto;
+    margin-top:80px;
+    margin-bottom:-140px;
+    padding:0%;
+    height: auto;
+    text-align: center;
+    justify-content: center;  
+    background-image: url(histoire_assets/wallpaper2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hsecond {
+
+    width:100%;
+    margin: 0 auto;
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom:60px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width:80%;
+    background-color:rgba(249, 250, 252, 0.889);
+    padding-right:50px;
+    padding-left:50px;
+    padding-left:50px;
+    border-radius:20px;
+    
+}
+
+/*HAUT DE PAGE*/
+
+.hhautpage{
+    height: 100vh;
+    margin:0px;
+    text-align: center;
+    color: white;
+    font-family:"Scheherazade New" ;
+    
+}
+
+#othercover {
+    background: url(histoire_assets/hautpagebackground.jpg) center/cover;
+}
+
+.hhautpage h2{
+    font-size: 2rem;
+}
+.hhautpage h1{
+    padding-top: 280px;
+    font-size: 3rem;
+}
+
+/* BLOCS HISTOIRES */
+
+
+
+/* ANIMATION DATE */
+
+.hdate {
+    font-size:300%;
+    font-family: 'Zen Antique Soft';
+    font-weight:700;
+     animation:fadein 2s;
+    -moz-animation:fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.hevenement {
+    font-size:300%;
+    font-family: 'Zen Antique Soft';
+    font-weight:700;
+    padding-bottom:30px;
+    animation:fadein 2s;
+    -moz-animation:fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+
+}
+
+#croisades {
+    justify-content: space-around;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0; font-size:0%;
+    }
+    to {
+        opacity:1; font-size:300%;
+    }
+}
+
+/* 
+@keyframes apparition {
+    0% {
+        opacity:0; font-size:0%;
+    }
+
+    100% {
+        opacity:100; font-size:300%;
+    }
+
+}
+
+.hdate {opacity:0;font-size:0%;}
+.hdate{ animation:apparition 1s ease 0.6s forwards;}
+
+.hevenement {opacity:0;font-size:0%;}
+.hevenement { animation:apparition 1s ease 0.7s forwards;}
+.hevenement { margin-bottom:40px;} */
+
+
+
+
+/* REDIMENSION IMAGE */
+
+.himagev {
+    max-height:1000px;
+    height:auto;
+    height:300px;
+    border-radius:20%;
+}
+
+/* FLEXBOX TEXTE/IMAGE/TEXTE */
+
+.hbox {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:40px;
+    border-radius:10%;
+    border: grey 3px solid;
+    box-shadow:grey 15px 5px 5px 5px;
+    margin-bottom:100px;
+    
+}
+
+.hboxtxtimg {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+}
+
+
+.hp {
+    text-align:justify;
+    max-width:50%;
+    height:auto;
+    width:30%;
+    padding-top:25px;
+    font-size:13px;
+    margin-right:20px;
+    margin-left:20px;
+    padding-right:10px;
+    padding-left:10px;
+    font-family:'Zen Antique';
+}
+
+
+.interparagraphe {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom:100px;
+}
+
+
+
+/*GROSSISSEMENT IMAGE*/
+
+
+
+.interimage {
+    max-width:1000px;
+    height:auto;
+    width:450px;
+    border-radius:20%;
+    margin-right:50px;
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    -o-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+.interimage:hover {
+    max-width:1000px;
+    height:auto;
+    width:450px;
+    border-radius:20%;
+    margin-right:50px;
+    -webkit-transform:scale(1.2); 
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2); 
+    -o-transform:scale(1.2); 
+    transform:scale(1.2);
+}
+
+
+
+.intertexte {
+    text-align: justify;
+    font-size:28px;
+    font-weight:900;
+    font-style:italic;
+    padding-top:35px;
+    padding-left:20px;
+}
+

@@ -1,0 +1,66 @@
+body {
+    background-color : white !important;
+}
+
+p {
+    color: green;
+}
+
+.fa-seedling, .fa-pagelines, .fa-water, .fa-map, .fa-tree, .fa-chess-rook, .fa-leaf, .fa-file, .fa-exclamation-circle {
+    color: green;
+}
+
+.nav-tabs .nav-link.active {
+    color: green;
+    border-color: green;
+}
+
+.uk-card-primary.uk-card-body, .uk-card-primary>:not([class*=uk-card-media]), .uk-card-secondary.uk-card-body, .uk-card-secondary>:not([class*=uk-card-media]), .uk-light, .uk-offcanvas-bar, .uk-overlay-primary, .uk-section-primary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) {
+    color: white;
+}
+
+.uk-offcanvas-bar {
+    background: darkgreen;
+}
+
+.uk-button-default {
+    background-color: green;
+    /* color: white; */
+}
+
+.uk-button-default {
+    background-color: transparent;
+    color: green;
+    border: 0px solid green;
+}
+
+::selection {
+    /* background: green; */
+    color: #fff;
+    text-shadow: none;
+}
+
+.uk-card-body {
+    display: flow-root;
+    padding: 10px 10px !important;
+}
+
+.uk-subnav-pill>.uk-active>a {
+    background-color: rgb(0 168 0 / 10%) !important;
+    /* color: #fff; */
+}
+
+.uk-card-default {
+    background-color: #fff;
+    color: green !important;
+    box-shadow: 0 15px 15px rgb(0 0 0 / 20%);
+}
+
+.to-the-top {
+    color: white;
+    background-color: darkgreen;
+}
+
+/* .uk-button-default {
+    color: white;
+} */
