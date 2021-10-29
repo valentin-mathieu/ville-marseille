@@ -40,7 +40,7 @@ body{
 .globalbg,
 .globalbg2,
 .globalbg3{
-    height: 50vh;
+    height: 53vh;
     width: 50vw;
     border-radius: 5px;
     z-index: 10;
@@ -57,10 +57,19 @@ body{
     margin-left: 0px;
     margin-right: auto;
 }
+.pointer,
+.malmousque,
+.frioul{
+    position: absolute;
+}
 .globalbg3{
-    background: url(./Assets/pointe-rouge.jpg) center/cover; 
+    background: url(./Assets/frioul.jpg) center/cover; 
     margin-right: 0px;
     margin-left: auto;
+}
+.frioul{
+    right: 30px;
+    left: auto;
 }
 .globalbtn,
 .globalbtn2,
@@ -98,24 +107,53 @@ body{
     line-height: 2rem;
     color: black;
     text-decoration: none;
-    border: solid 2px red   ;
+    border: solid 2px grey;
+    box-shadow: -1px 2px 5px 4px rgba(0, 0, 0, 0.445);
 }
 .global-txt a{
     text-decoration: none;
     color: grey;
 }
 .global-txt{
-    margin-top: -365px;
+    margin-top: -375px;
     left: 10px;
 }
 .global-txt2{
     right: 10px;
     left: auto;
-    margin-top: -300px;
+    margin-top: -310px;
 }
 .global-txt3{
-    margin-top: -300px;
+    margin-top: -310px;
     left: 10px;
+}
+.img-d{
+    position: absolute;
+    margin-top: -375px ;
+    right: 100px;
+    left: auto;
+    width: auto;
+    height: 48vh;
+}
+.img-d2{
+    position: absolute;
+    margin-top: -375px;
+    left: 100px;
+    width: auto;
+    height: 48vh;
+}
+.img-d3{
+    position: absolute;
+    margin-top: -375px ;
+    right: 100px;
+    left: auto;
+    width: auto;
+    height: 48vh;
+}
+.img-txt,
+.img-txt2,
+.img-txt3{
+    opacity: 0;
 }
 .globalcheckbox:checked ~ .global-txt,
 .globalcheckbox2:checked ~ .global-txt2,
@@ -124,16 +162,25 @@ body{
     width: 40%;
     z-index: 200;
 }
+.globalcheckbox:checked ~ .img-txt,
+.globalcheckbox2:checked ~ .img-txt2,
+.globalcheckbox3:checked ~ .img-txt3{
+    opacity: 1;
+    animation: 1.2s ease-in-out forwards opa;
+}
+@keyframes opa{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
 .globalcheckbox:checked ~ .globalbg,
 .globalcheckbox2:checked ~ .globalbg2,
 .globalcheckbox3:checked ~ .globalbg3{
-    animation: ease-out 0.8s forwards trans;
     top: 10px;
     left: 0px;
     z-index: 20;
     width: 100vw;
     animation: 1.5s ease-in-out alternate forwards trans;
-    margin: 0;
+    margin: 10px 0px;
 }
 @keyframes trans{
     0%{
@@ -141,12 +188,31 @@ body{
     }
     50%{
         opacity: 0.5;
-        transform: scaleX(1.5);
+        transform: scaleX(2);
     }
     100%{
         background: rgb(174,238,238);
         background: linear-gradient(90deg, rgba(174,238,238,1) 0%, rgba(148,187,233,1) 100%); ;
         opacity: 1;
-        transform: scaleX(2);
+        transform: scaleX(3);
+    }
+}  
+.globalcheckbox:checked ~ .globalbtn,
+.globalcheckbox2:checked ~ .globalbtn2,
+.globalcheckbox3:checked ~ .globalbtn3{
+    transform: rotate(180deg);
+    margin-top: 200px;
+    animation: 1s ease-in-out forwards btn;
+}
+@keyframes btn{
+    from{
+        margin-top: 100px;
+        transform: rotate(0deg);
+    }
+    to{
+        margin-top: 200px;
+        transform: rotate(180deg);
     }
 }
+
+
