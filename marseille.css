@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-image: url(Images/img_header.jpg);
+    background-image: url(/Images/img_header.jpg);
     width: 100%;
     height: 250px;
     border-radius: 0 0 85% 85% / 20%;
@@ -301,7 +301,7 @@ main li {
 }
 
 footer {
-    background-image: url(Images/img_footer.jpg);
+    background-image: url(/Images/img_footer.jpg);
     width: 100%;
     height: 240px;
     border-radius: 85% 85% 0 0 / 20%;
