@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+
+    <!-- Stylesheet -->
+    <link href="marseille4.css" rel="stylesheet">
+
+
+    <title>ville de marseille - parcs publics </title>
+</head>
+<body>
+
+    <!-- Header Scetion start -->
+    <header>
+
+    </header>
+    <!-- Header Section end -->
+
+    <!-- Main Section -->
+    <main>
+            <!-- Tabs navs start -->
+            <ul class="nav nav-tabs nav-justified mb-3 pt-4 pb-4" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                <a
+                    class="nav-link active"
+                    id="ex3-tab-1"
+                    data-mdb-toggle="tab"
+                    href="#ex3-tabs-1"
+                    role="tab"
+                    aria-controls="ex3-tabs-1"
+                    aria-selected="true"
+                    >
+                    <i class="fas fa-seedling fa-lg">
+                        <div class="d-inline fw-bold">
+                                Présentation des espaces verts
+                        </div>
+                    </i>
+                    </a
+                >
+                </li>
+                <li class="nav-item" role="presentation">
+                <a
+                    class="nav-link"
+                    id="ex3-tab-2"
+                    data-mdb-toggle="tab"
+                    href="#ex3-tabs-2"
+                    role="tab"
+                    aria-controls="ex3-tabs-2"
+                    aria-selected="false"
+                    >
+                    <i class="fab fa-pagelines fa-lg">
+                        <div class="d-inline fw-bold">
+                            Liste des Parcs et Jardins
+                        </div>
+                    </i>
+                    </a
+                >
+                </li>
+            </ul>
+            <!-- Tabs navs end -->
+            
+            <!-- Tabs content start -->
+            <div class="tab-content" id="ex2-content">
+                <div
+                class="tab-pane fade show active"
+                id="ex3-tabs-1"
+                role="tabpanel"
+                aria-labelledby="ex3-tab-1"
+                >
+                Item 1
+                </div>
+                <div
+                class="tab-pane fade"
+                id="ex3-tabs-2"
+                role="tabpanel"
+                aria-labelledby="ex3-tab-2"
+                >
+                <!-- Filter list Grid with parallax start -->
+                <div uk-filter="target: .js-filter">
+
+                <ul class="uk-subnav uk-subnav-pill justify-content-center">
+                    <li class="uk-active" uk-filter-control>
+                        <a href="#">
+                            <i class="fas fa-tree">
+                                <i class="fas fa-chess-rook">
+                                    <div class="d-inline fw-bold">Voir tout</div>
+                                </i>
+                            </i>
+                        </a>
+                    </li>
+                    <li uk-filter-control="[data-tags='parks']">
+                        <a href="#">
+                            <i class="fas fa-chess-rook">
+                                <div class="d-inline fw-bold">Voir les parcs</div>
+                            </i>
+                        </a>
+                    </li>
+                    <li uk-filter-control="[data-tags='gardens']">
+                        <a href="#">
+                            <i class="fas fa-tree">
+                                <div class="d-inline fw-bold">Voir les jardins</div>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="parallax: 50">
+                    <li data-tags="parks">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2019/01/fdfe151a-3829-4a30-8a34-2e73b8cc6c0d/870x489_vdm_261964.webp" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Le Parc Borely</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay1">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Ouvert tous les jours de 6h à 21h</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Avenue du Prado, 13008 Marseille</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="gardens">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://pbs.twimg.com/media/DQ87--0WsAUBWI-?format=jpg&name=4096x4096" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">La Jardin Botanique</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay2">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">du mardi au vendredi de 12h à 17h30</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light">les samedis, dimanches et jours fériés de 10h à 17h30</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">551 / 564 avenue du Prado, Avenue du parc Borély, 13008 Marseille</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="parks">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://www.marseilletourisme.fr/media/filer_public_thumbnails/filer_public/2019/06/04/marseille-visite-parc-longchamp.jpg__850x600_q85_crop_subsampling-2_upscale.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Parc Longchamp</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay3">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">du mardi au vendredi de 12h à 18h30</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light">les samedis, dimanches et jours fériés de 10h à 18h30</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Boulevard du Jardin zoologique, 13004 Marseille</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="parks">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://www.marseilletourisme.fr/media/filer_public_thumbnails/filer_public/2019/03/04/marseille-chateau-pastre.jpg__2000x1328_q85_crop_subsampling-2.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Palais Pastré</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay4">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">du mardi au vendredi de 12h à 19h30</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light">les samedis, dimanches et jours fériés de 10h à 19h30</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">55 Avenue de Montredon, 13008 Marseille</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="gardens">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://tourisme-marseille.com/wp-content/uploads/2015/07/jardin-de-corbiere-marseille.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Jardin de Corbières</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay5">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">ouvert toute l'année 24/7</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Route du Rove, 13016 Marseille</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="parks">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="http://www.photos-provence.fr/marseille/parc-26-centenaire-2.JPG" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Parc du 26ème centenaire</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay6">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light">ouvert toute l'année 24/7</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Rond-point Zino Francescatti, 13010 Marseille</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="gardens">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://www.marseilletourisme.fr/media/filer_public/2014/09/jardin-pharo-1024x734.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Jardin du Pharo</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay7">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Du 1er janvier au 31 décembre de 7h à 21h</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Boulevard Charles Livon, 13007 Marseille</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="gardens">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://locations.filmfrance.net/sites/default/files/photos/jardin-du-bois-sacre-155328/boissacre16.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Jardin du Bois Sacré</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay8">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Ouvert toute l'année 24h/7</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Rue du Bois Sacré, 13007 Marseille</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tags="gardens">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="https://tourisme-marseille.com/wp-content/uploads/2015/07/jardin-de-la-colline-puget-marseille-4.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                        <p class="uk-h4 uk-margin-remove fs-5">Jardin de la Colline du Puget</p>
+                                        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay9">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Ouvert tous les jours de 6h à 18h30</p>
+                                        <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Rue Abbé D'Assy, 13007 Marseille</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            
+            </div>
+            <!-- Filter list Grid with parralax end -->
+
+            <!-- Open Button Content -->
+            <!-- Parc Borély -->
+            <div id="offcanvas-overlay1" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Parc Borély : le plus fréquenté des espaces verts marseillais
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                            Le parc Borély qui s'étend sur 18 hectares (dont 1,2 hectares pour le jardin botanique) est le plus fréquenté des espaces verts marseillais.
+                            <div class="pt-2 text-break">
+                                Il abrite une bastide du XVIIIe siècle, mise en valeur par un jardin "à la française" et un parc paysager du XIXe siècle. Le jardin garde l'empreinte de l'ingénieur et architecte Embry, intervenu sur le site en 1775.
+                            </div>
+                            <div class="pt-2 text-break">
+                                Entre 1860 et 1880, la Ville de Marseille fit appel à Alphand (ingénieur des plantations de la Ville de Paris) pour créer un parc public dans la propriété. Celui-ci confia l'exécution du projet à son collaborateur Barillet-Deschamps.
+                            </div>
+                            <div class="pt-2 text-break">
+                                La juxtaposition ­du parc et du jardin "à la française" confère à Borély un charme supplémentaire. Ses allées sont très prisées des joggers et des promeneurs qui apprécient de flâner entre les massifs de la roseraie ou de découvrir les espèces rares du jardin botanique.
+                                Le plan d'eau, son embarcadère, sa buvette et son restaurant complètent les multiples attractions du site. Borély est aussi un paradis pour les enfants doté de deux aires de jeux et de nombreux espaces.
+                            </div>
+                            <div class="pt-2 text-break">
+                                En 1995, la cascade en rocaille du XIXe siècle a été choisie pour servir d'écrin à l’œuvre originale de Jean-Michel Folon "l'Homme aux oiseaux".
+                                La même année, un parcours pédagogique de découverte des diverses richesses du parc a été mis en place. La signalétique des végétaux présente les arbres les plus remarquables du parc.
+                                L'identification des oiseaux du lac est abordée d'une manière similaire, ainsi que chacun de ses centres d'intérêt (sculptures, monuments, édifices...).
+                            </div>
+                            <div class="pt-2 text-break">
+                                Par ailleurs, la remise en service des jets d'eau permet de retrouver le cachet de l'architecture classique d'antan et l'harmonie de leurs jeux rendent à la partie française sa beauté d'origine.
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/parc-borely" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jardin Botanique -->
+            <div id="offcanvas-overlay2" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Jardin botanique : Un peu d'histoire
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                                C’est au XIXe siècle seulement que les jardins botaniques sont devenus des jardins publics d'agrément, alors appelés "Jardins des plantes". Le premier Jardin botanique de Marseille est créé par le Roy René, près de l'abbaye Saint-Victor.                    
+                            <div class="pt-2 text-break">
+                                Il abrite une bastide du XVIIIe siècle, mise en valeur par un jardin "à la française" et un parc paysager du XIXe siècle. Le jardin garde l'empreinte de l'ingénieur et architecte Embry, intervenu sur le site en 1775.
+                            </div>
+                            <div class="pt-2 text-break">
+                                En 1802, un second jardin est inauguré dans le quartier des Chartreux, avec pour marraine l'Impératrice Joséphine. Il connaît grâce à son directeur, M. Gouffé-Lacour, une grande renommée. Malheureusement, ce jardin, situé sur l'axe de la voie­ ferrée Marseille-Toulon, disparaît en 1856. En échange, le directeur de la Société des chemins de fer Lyon-Méditerranée propose à la Ville les terrains du parc Borély.
+                            </div>
+                            <div class="pt-2 text-break">
+                                En 1880, le Jardin botanique est déplacé sur l'actuelle roseraie du parc Borely. Les frères Buhler imaginent alors un véritable jardin botanique. Le Dr Heckel, qui supervise la création du parc, le juge vite trop petit et tente d’acquérir la propriété Fournier, voisine du parc.
+                                En 1913, la Ville de Marseille achète les terrains pour y installer le nouveau jardin botanique. Il est inauguré en 1918, sur son site actuel.                    
+                            </div>
+                            <div class="pt-2 text-break">
+                                Aujourd’hui, le Jardin botanique s’étend sur 1,2 hectares et présente environ 3 000 ­espèces végétales différentes, provenant des cinq continents, présentées dans neuf espaces thématiques : jardin japonais, chinois, méditerranéen, de plantes grimpantes, succulentes, médicinales, potager, palmetum et serre d'Afrique du Sud. Véritable " musée du vivant", le jardin botanique offre un véritable parcours de découvertes ludiques, sensorielles, et  insolites.                    
+                            </div>
+                            <div class="pt-2 text-break">
+                                Ce jardin de la biodiversité accueille également, depuis avril 2016, le premier grand hôtel à insectes de la cité phocéenne.
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/jardin-botanique" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Palais Longchamp -->
+            <div id="offcanvas-overlay3" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Palais Longchamp : sous le signe de la culture et de la nature
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                                Protégé au titre des monuments historiques, le parc Longchamp s'est constitué au fil du temps, par la stratification des différents projets, imaginés ou réalisés sur le site, depuis le XIXe siècle.
+                            <div class="pt-2 text-break">
+                                À Marseille, comme dans toute la Provence, la maîtrise de l'eau est restée un problème majeur jusqu'à la construction du canal de Marseille pour alimenter la cité grâce aux eaux de la Durance.
+                                <div class="text-break">
+                                    Le 8 Juillet 1847, les eaux arrivent sur le plateau Longchamp, suivant le canal tracé par l'ingénieur des Ponts et Chaussées, Franz Major de Montricher, tran­sformant du même coup, le paysage marseillais
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Pour célébrer cet évènement, l'architecte Henri Espérandieu conçoit, en 1862, un projet d'envergure comprenant une fontaine monumentale entourée de deux ailes abritant l'une, le muséum d'Histoire naturelle, l'autre, le musée des Beaux-Arts.
+                                <div class="text-break">
+                                    Il conçoit alors un double escalier encerclant la fontaine pour accéder à ses musées, derrière laquelle s'étendent trois jardins.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Le jardin public dit "du plateau", est inauguré en 1869, en même temps que le château d'eau, tandis que le "Jardin de l'Observatoire" est réalisé entre 1863 et 1864.
+                                <div class="text-break">
+                                    Sous le jardin du plateau, deux salles superposées sont construites pour recueillir les eaux du canal de Marseille qui s'y décantaient avant d'être redistribuées dans la ville. Ces bassins, élément essentiel du système hydraulique, enterrés et soutenus par une forêt de piliers, seront prochainement réhabilités.
+                                </div>
+                                <div class="text-break">
+                                    Conçu par Espérandieu comme un écrin au "Palais Longchamp" et réalisé à l'arrière du château d'eau, il a été tracé "à la française", dans l'esprit d'Édouard André. Les larges allées sinueuses mettent en valeur le groupe sculpté représentant la Durance ainsi que la cascade ornée de stalactites célébrant l'arrivée du Canal à Marseille. La transparence du corps central du château d'eau permet une vue perspective de la ville.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Enfin, le Jardin zoologique, ouvert aux Marseillais dès 1854, illustre la passion du second Empire pour l'exotisme et le voyage. Victime de la désaffection du public, le zoo ferme en 1987. Les cages, aujourd'hui désertées, évoquent la grande époque du zoo.
+                            </div>
+                            <div class="pt-2 text-break">
+                                Le Jardin zoologique appartient au courant des jardins "pittoresques" ou "à l'anglaise" intégrant une nature reconstituée et faisant la part belle aux éléments de décor. On peut y observer un kiosque à musique, des fabriques orientalistes restaurées en 2013 (les pavillons de la girafe et de l'éléphant et les cages aux fauves ornées de céramiques turquoises), des éléments de rocaille (la cascade des phoques, la volière et la cage aux ours) et une cabane "rustique", autrefois occupée par des autruches. D'autres cages sont ornées de peintures naïves et comportent des grillages décorés et des maisonnettes en briques.
+                            </div>
+                            <div class="pt-2 text-break">
+                                Sur les trois jardins réalisés, deux seulement sont aujourd'hui ouverts au public : le "Jardin du plateau" et le "Jardin zoologique".
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/parc-longchamp" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Parc Pastré -->
+            <div id="offcanvas-overlay4" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Palais Pastré : Près de 200 ans d'histoire...
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                            Entre la Pointe Rouge et la Grotte Rolland, le parc Pastré s'étend jusqu'aux collines de Marseilleveyre sur 112 hectares dont 100 hectares d'espaces naturels.
+                            <div class="pt-2 text-break">
+                                Plus connu sous le nom de "campagne Pastré", il est associé, dans la mémoire des Marseillais, à la famille Pastré qui constitua le domaine entre 1836 à 1853.­
+                            </div>
+                            <div class="pt-2 text-break">
+                                Jusqu'à l'arrivée du canal de Marseille, grâce aux efforts constants des propriétaires pour capter l'eau, quelques prés et de rares potagers s'étendent sur la partie basse, ainsi que des vignes, des céréales et des fruitiers (amandiers, figuiers, abricotiers).
+                                <div class="text-break">
+                                    La végétation naturelle, outre la garrigue qui couvre les coteaux, est essentiellement constituée de pins d'Alep, de chênes verts, de lauriers-tins et de cette variété de genévrier appelée "Mouven" en provençal. Selon la légende, le plus célèbre spécimen, aujourd'hui disparu, abrita, les amours de Bonaparte et de Désirée Clary.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Avec la "révolution de l'eau", le domaine prend des allures de parc à l'anglaise, décoré de statues et ponctué de petits lacs artificiels sur lesquels on aime canoter au milieu des canards et des cygnes.
+                                <div class="text-break">
+                                    Peu à peu, les cultures cèdent la place aux jardins d'agrément et la végétation s'enrichit d'espèces introduites (pins parasols, yuccas, bambous...). On y élève même des autruches !
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Parallèlement, trois demeures de prestige sont édifiées entre 1845 et 1865. La plus prestigieuse, le château Pastré, est une élégante construction de briques et de pierres.
+                                <div class="text-break">
+                                    Le château Estrangin - dont le style, inspiré des demeures bourgeoises du nord de la France, tranche avec l'élégance et la sensualité chaleureuse du château Pastré - est aujourd'hui occupé par un centre aéré de la mairie du 4e secteur.
+                                </div>
+                                <div class="text-break">
+                                    Quant au château Sanderval, plus austère, il est resté propriété privée.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Pendant un siècle, le domaine va connaître les fastes de la vie mondaine et culturelle. La comtesse Lily Pastré habitait la "Villa provençale", une magnifique bastide du XVIIIe aujourd'hui réservée à l'hébergement des hôtes de marque et aux réceptions officielles de la mairie.
+                                <div class="text-break">
+                                    Pastré devient alors un haut lieu de la vie culturelle et un refuge pour de nombreux artistes pendant la période de l'Occupation.
+                                </div>
+                                <div class="text-break">
+                                    Entre 1966 et 1987, la Ville de Marseille achète la quasi totalité de la "campagne Pastré", le château Sanderval, la bastide Clary, lim­itrophes du domaine, et la propriété Alvarez de Toledo, enclavée.
+                                </div>
+                                <div class="text-break">
+                                    À ceux qui savent observer et écouter les récits des pierres, les bastides racontent cent cinquante ans de l'histoire de Marseille, à travers l'évocation des cinq générations de la famille Pastré qui modelèrent le domaine.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                La campagne Pastré est aujourd'hui devenue un immense parc public. Ce site est l'un des plus beaux fleurons du patrimoine municipal. Son allée centrale se déroule sur plus de 900 mètres. Deux petits lacs, un canal, des aires et terrains de jeux, des sentiers de randonnées séduisent ses nombreux usagers.
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/parc-pastre" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jardin des Corbières -->
+            <div id="offcanvas-overlay5" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Jardin de Corbières
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                            Situé à l’extrémité Nord de Marseille, en limite de la commune du Rove, le site de Corbière - qui s'étend sur 2,1 hectares - occupe une position privilégiée. Abrité du mistral par la falaise qui le domine et orienté Sud-Ouest, il bénéficie d’un microclimat et d’une température clémente, même en plein hiver.­
+                            <div class="pt-2 text-break">
+                                À la fin des années 1970, la Ville de Marseille décide de restaurer un accès à la mer pour la population du Nord de Marseille qui en était privée depuis la création du port de l’Estaque.
+                                <div class="text-break">
+                                    Dans un premier temps, elle sécurise et aménage la pinède existant dans la partie haute de l’anse de Corbières. Puis, entre 1988 et 1991, la Ville crée une plage de galets (dite “ du Fortin ”), deux plages de sable (la plage de la Batterie et la plage de la Lave) ainsi qu'une base nautique, en récupérant une partie de l’ancien Port Chagnaud, à l’abri de la digue.
+                                </div>   
+                            </div>
+                            <div class="pt-2 text-break">
+                                Parallèlement, la Direction des Parcs et Jardins réalise un jardin mêlant flore autochtone (garrigue, pins d’Alep, figuiers, lentisques, lavandes, tamaris…), méditerranéenne (pins pignons, arbres de Judée, lauriers roses, eucalyptus…) et même subtropicale (agaves, bougainvillées, filao), grâce au microclimat généré par la falaise.
+                            </div>
+                            <div class="pt-2 text-break">
+                                L’aménagement général traduit une volonté évidente de préserver le caractère “ naturel ” du site. Les cheminements épousent le relief et des terrasses permettent au jardin de s’adapter aux forts dénivelés du site.
+                            </div>
+                            <div class="pt-2 text-break">
+                                Parallèlement, les éléments architecturaux marquants sont intégrés à la végétation. Le fortin, construit en 1861, le viaduc supportant la voie ferrée, l’entrée du tunnel du Rove et la digue structurent le paysage et témoignent de l’histoire et des activités industrielles et portuaires de l’Estaque.
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/jardin-de-corbieres" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Parc du 26ème centenaire -->
+            <div id="offcanvas-overlay6" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Parc du 26ème centenaire : Un parc urbain en plein coeur de Marseille
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                            Situé en plein cœur de Marseille, le Parc du 26e centenaire s’étend sur 10,5 hectares. Il a été aménagé sur le site de l'ancienne gare du Prado.
+                            <div class="pt-2 text-break">
+                                Lorsqu’en 1998, la Ville de Marseille achète le terrain à la SNCF, il y a longtemps que la gare ne sert plus qu’à la formation des trains transportant les ordures ménagères vers la décharge d’Entressen.
+                                <div class="text-break">
+                                    Pour la municipalité, la création du parc est alors un moyen de restaurer un tissu urbain "déchiré" par un site industriel à l’abandon.
+                                </div>
+                                <div class="text-break">
+                                    De plus, la municipalité souhaite, grâce à cet espace vert de détente et de passage, recréer le lien qui existait entre les trois quartiers bordant la gare.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Les travaux ont commencé à l'automne 1999. Le parc a été inauguré le 23 juin 2001.
+                            </div>
+                            <div class="pt-2 text-break">
+                                De conception très contemporaine, le parc s’inscrit cependant dans la mémoire commune, faisant référence aux vingt-six siècles d’histoire de la Ville. Certains vestiges conservés de la gare sont les témoins d’un passé encore vivant dans le souvenir de nombreux Marseillais.
+                                <div class="text-break">
+                                    L’eau y est omniprésente et fait écho à "l’Arbre de l’Espérance" qui se dresse à l’entrée principale. Les jets d'eau ont été conçus comme des fontaines ornementales. Il ne s'agit donc pas d'aires de jeux (risques pour les enfants).
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Quatre jardins thématiques symbolisent la mixité culturelle de la population et l’ouverture de Marseille sur le monde :
+                                <div class="text-break">
+                                    - le Jardin provençal, structuré en terrasses
+                                </div>
+                                <div class="text-break">
+                                    - le Jardin oriental, de style arabo-andalou
+                                </div>
+                                <div class="text-break">
+                                    - le Jardin africain, animé de dunes
+                                </div>
+                                <div class="text-break">
+                                    - le Jardin asiatique rappelant les jardins japonais
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Les plantes y sont disposées en fonction de leur forme et de leur capacité à illustrer ou à évoquer le style souhaité. Il ne s’agit pas de jardins botaniques, au sens scientifique du terme, car les plantes ne sont pas sélectionnées en fonction de leur véritable aire d’origine.
+                                <div class="text-break">
+                                    En effet, les Marseillais, grâce à leur grand port, ont toujours été en relation avec la Méditerranée, mais aussi l’Afrique, le Moyen et l’Extrême Orient. Ainsi, différentes espèces végétales ont réussi à s’acclimater à Marseille.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Ce parc a obtenu, en 2005, le label "Jardin remarquable" du ministère de la Culture.
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/parc-du-26eme-centenaire" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jardin du Pharo -->
+            <div id="offcanvas-overlay7" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Jardin du Pharo
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                            <div class="pt-2 text-break">
+                                Le Jardin du Pharo ou Émile-Duclaux, entoure le Palais du Pharo.
+                            </div>
+                            <div class="pt-2 text-break">
+                                D'une superficie de 5,7 hectares, il offre une vue imprenable sur le Vieux-Port et la côte Nord de Marseille, le Mucem et le ballet des ferries quittant le port.  Une véritable invitation au voyage...
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/jardin-du-pharo" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jardin du Bois Sacré -->
+            <div id="offcanvas-overlay8" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Jardin du Bois Sacré
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                            C'est en gravissant l’escalier situé en haut du Boulevard André Aune que le promeneur peut découvrir - en plein cœur de Marseille - un espace naturel inattendu et pittoresque.
+                            <div class="pt-2 text-break">
+                                Le parc de 1,1 hectare s’étend sur le flanc de la colline de Notre Dame de la Garde.­
+                                <div class="text-break">
+                                    De tous temps, cet endroit fût considéré comme un lieu sacré, donnant d’ailleurs son nom au jardin. A partir du Moyen-Age, pèlerinages et processions se succèdent. Les pèlerins manifestent une dévotion à la "Bonne Mère", dont le rayonnement dépasse largement le cadre marseillais. Le succès est tel que l’on commence l’édification de la basilique actuelle en 1853, sur des plans d’Henri Espérandieu.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Dès 1911, apparaissent sur le versant Nord, les premiers signes de verdissement de cette colline jusqu'alors dépouillée. Ces plantations, essentiellement constituées de pins d'Alep, ont été complétées de cyprès, chênes verts et cèdres.
+                                <div class="text-break">
+                                    Les essences plantées à l'origine sont à présent accompagnées d'oliviers. Ainsi des centaines de sujets sont venus renforcer et pérenniser l’œuvre entreprise au début de ce siècle.
+                                </div>
+                                <div class="text-break">
+                                    Le versant Sud de la colline a également reverdi ces dernières années. Des aménagements, effectués de part et d'autre de l'avenue du Bois Sacré, ont doté cet espace de pelouses, d'un cheminement piétonnier dans la pinède, de jeux de boules, de terrains de sport et d'une aire de jeu pour enfants.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/jardin-du-bois-sacre" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Jardin de la Colline du Puget -->
+            <div id="offcanvas-overlay9" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3 class="fs-4">
+                        Jardin de la Colline Puget : le plus ancien jardin public de Marseille.
+                    </h3>
+                    <p>
+                        <div class="pt-4 fs-6 fw-light">
+                            En 1801, le préfet Charles Delacroix imagine de prolonger la nouvelle promenade créée sur l'emplacement des remparts sud de la ville (l'actuel cours Pierre Puget) par l'aménagement de la colline située en surplomb. ­
+                            <div class="pt-2 text-break">
+                                Soumis à de nombreux aléas politiques et financiers, les travaux, réalisés par les Ateliers de Charité, s’échelonnent sur plus de cinquante ans.
+                                <div class="text-break">
+                                    A l’époque, les problèmes dus à la topographie (transport de terre à dos d’âne, difficultés d’arrosage, écroulements répétitifs…) ralentissent fortement les travaux.
+                                </div>
+                            </div>
+                            <div class="pt-2 text-break">
+                                Les derniers agrandissements datent du Second Empire. La municipalité Honnorat apporte un soin tout particulier à l'embellissement du jardin et adopte les plans de l'architecte-paysagiste Varre.
+                            </div>
+                            <div class="pt-2 text-break">
+                                Le jardin de la Colline prend diverses appellations au cours des années pour devenir, en 1872, le jardin de la Colline Puget.
+                            </div>
+                            <div class="pt-2 text-break">
+                                En 1878, la mise en place du buste de Pierre Puget au sommet de la colonne vient entériner cette décision.
+                            </div>
+                            <div class="pt-2 text-break">
+                                L'aménagement central de ce jardin d'une surface de 1,3 hectare, au fort dénivelé, offre un espace ludique pour les enfants et propice au repos des adultes.
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button class="uk-button uk-button-text">
+                                <a class="uk-link-reset" href="https://www.marseille.fr/environnement/parcs-et-jardins/jardin-de-la-colline-puget" target="_blank">
+                                    Voir plus sur le site officiel
+                                </a>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tabs content end -->
+
+    </main>
+    <!-- Main Section end -->
+
+    <!-- Footer section start -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center pt-5 pb-5">    
+                <a class="uk-button uk-button-default" href="#top" uk-scroll>Retour en haut de la page</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    
+</body>
+</html>
