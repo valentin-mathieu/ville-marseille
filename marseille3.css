@@ -1,20 +1,14 @@
 
-
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    position: relative;
+main{
+    margin-top: 80px;
+    background: #79a3d6;
 }
 .haut{
     height: 100vh;
     background: url(./Assets/bg2.jpg) center/cover fixed;
-    overflow: hidden;
 }
 .haut h1{
     text-align: center;
-    padding: 30px;
     font-size: 2.9rem;
     line-height: 4rem;
     color: #fff;
@@ -40,7 +34,7 @@ body{
 .globalbg,
 .globalbg2,
 .globalbg3{
-    height: 53vh;
+    height: 54vh;
     width: 50vw;
     border-radius: 5px;
     z-index: 10;
@@ -57,15 +51,15 @@ body{
     margin-left: 0px;
     margin-right: auto;
 }
-.pointer,
-.malmousque,
-.frioul{
-    position: absolute;
-}
 .globalbg3{
     background: url(./Assets/frioul.jpg) center/cover; 
     margin-right: 0px;
     margin-left: auto;
+}
+.pointer,
+.malmousque,
+.frioul{
+    position: absolute;
 }
 .frioul{
     right: 30px;
@@ -115,16 +109,16 @@ body{
     color: grey;
 }
 .global-txt{
-    margin-top: -375px;
+    margin-top: -410px;
     left: 10px;
 }
 .global-txt2{
     right: 10px;
     left: auto;
-    margin-top: -310px;
+    margin-top: -360px;
 }
 .global-txt3{
-    margin-top: -310px;
+    margin-top: -360px;
     left: 10px;
 }
 .img-d{
