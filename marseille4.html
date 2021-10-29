@@ -20,7 +20,10 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
 
-    <!-- Stylesheet -->
+    <!-- Stylesheet Marseille -->
+    <link rel="stylesheet" href="marseille.css">
+    
+    <!-- Stylesheet Marseille 4 -->
     <link href="marseille4.css" rel="stylesheet">
 
 
@@ -33,11 +36,26 @@
 
     </header>
     <!-- Header Section end -->
-
+    <img id="mouette" src="Images/mouette.png" alt="mouette" width="111px" height="50px">
+        <img id="logo" src="Images/welcome_marseille.png" alt="marseille" width="700px" height="250px">
+        <nav>
+            <ul>
+                <li class="menu"> <a href="marseille.html"> MENU <br> ≡</a> 
+                    <ul class="submenu">    
+                        <li> <a href="marseille1.html"> L'histoire de Marseille </a> </li>
+                        <li> <a href="marseille2.html"> Randonnées à proximité </a> </li>
+                        <li> <a href="marseille3.html"> Les plages </a> </li>
+                        <li> <a href="marseille4.html"> Les parcs publics </a> </li>
+                        <li> <a href="marseille5.html"> Les musées de la ville </a> </li>
+                        <li> <a href="marseille6.html"> Contactez-nous </a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     <!-- Main Section -->
-    <main>
+    <main class="pt-5">
             <!-- Tabs navs start -->
-            <ul class="nav nav-tabs nav-justified mb-3 pt-4 pb-4" id="ex1" role="tablist">
+            <ul class="nav nav-tabs nav-justified mb-3 pt-5 pb-4" id="ex1" role="tablist">
                 <li class="nav-item" role="presentation">
                 <a
                     class="nav-link active"
@@ -57,13 +75,31 @@
                 >
                 </li>
                 <li class="nav-item" role="presentation">
+                    <a
+                        class="nav-link"
+                        id="ex3-tab-1"
+                        data-mdb-toggle="tab"
+                        href="#ex3-tabs-2"
+                        role="tab"
+                        aria-controls="ex3-tabs-2"
+                        aria-selected="true"
+                        >
+                        <i class="fas far fa-file fa-lg">
+                            <div class="d-inline fw-bold">
+                                Informations pratiques
+                            </div>
+                        </i>
+                        </a
+                    >
+                </li>
+                <li class="nav-item" role="presentation">
                 <a
                     class="nav-link"
-                    id="ex3-tab-2"
+                    id="ex3-tab-3"
                     data-mdb-toggle="tab"
-                    href="#ex3-tabs-2"
+                    href="#ex3-tabs-3"
                     role="tab"
-                    aria-controls="ex3-tabs-2"
+                    aria-controls="ex3-tabs-3"
                     aria-selected="false"
                     >
                     <i class="fab fa-pagelines fa-lg">
@@ -85,13 +121,192 @@
                 role="tabpanel"
                 aria-labelledby="ex3-tab-1"
                 >
-                Item 1
+                <div class="container pt-5 justify-content-center">
+                    <div class="row col-12 text-center">
+                        <div class="d-inline fs-4 fw-bolder">
+                            Les parcs et jardins
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container pt-5 pb-5 justify-content-center">
+                    <div class="row col-12">
+                        <div class="fw-bold">
+                            Le patrimoine naturel de la ville de Marseille est unique.
+                        </div>
+                        <div class="text-break pt-2 fw-normal">
+                            Sur les 10 000 hectares de nature protégée que compte le territoire marseillais, on recense 1 000 hectares d’espaces verts urbains et 9 000 hectares d’espaces naturels situés en périphérie de la ville.
+                        </div>
+                        <div class="text-break pt-4 fw-normal">
+                            Le patrimoine des espaces verts de la Ville de Marseille recouvre  
+                            <div class="d-inline fw-bolder">plus de 700 hectares</div>
+                            : parcs, jardins, espaces verts de voirie, cimetières, squares... Ce patrimoine est en augmentation constante et permet d’offrir aux Marseillais un panel d’aménagements variés et ludiques.
+                        </div>
+                        <div class="text-break pt-4 fw-normal">
+                            Marseille possède aujourd’hui
+                            <div class="d-inline fw-bolder">58 parcs d’une superficie supérieure à 1 hectare, dont 16 de plus de 5 hectares</div>
+                            : Longchamp, Émile-Duclaux (Pharo), Borély et le Jardin botanique, parc balnéaire du Prado, Pastré, Maison Blanche, Colline Saint-Joseph, 26e Centenaire, Bruyères, Moline, Athéna, Espérance, Font Obscure, Séon, François-Billoux et Montgolfier.
+                        </div>
+                        <div class="text-break pt-4 fw-normal">
+                            Les parcs Borély, Bagatelle, Pastré, Valmer, Magalone, Maison Blanche, Saint-Cyr, Bruyères, Grand séminaire, François-Billoux et Brégante ont été réalisés sur les anciennes propriétés de grandes familles marseillaises.
+                        </div>
+                        <div class="text-break pt-4">
+                            Certains parcs ont<div class="d-inline fw-bolder"> un caractère patrimonial </div>original notamment :
+                            <div class="text-break pt-2"><i class="fas fa-seedling"></i> le parc Longchamp avec sa fontaine monumentale et ses fabriques,</div>
+                            <div class="text-break"><i class="fas fa-seedling"></i> le jardin de la colline Puget, le plus ancien jardin public de la ville,</div>
+                            <div class="text-break"><i class="fas fa-seedling"></i> le jardin du Pharo qui abrite le palais construit par Louis Napoléon pour l’impératrice Eugénie,</div>
+                            <div class="text-break"><i class="fas fa-seedling"></i> le parc balnéaire du Prado dont les hectares ont été conquis sur la mer,</div>
+                            <div class="text-break"><i class="fas fa-seedling"></i> ou encore le jardin de Corbières conçu comme un balcon sur la mer.</div>
+                        </div>
+                        <div class="text-break pt-4">
+                            D’autres, plus récents, sont nés de la volonté municipale de 
+                            <div class="d-inline fw-bolder">ménager des "respirations" dans la densité du tissu urbain </div>
+                            :
+                            <div class="text-break pt-2"><i class="fas fa-seedling"></i> le parc du 26e Centenaire,</div>
+                            <div class="text-break"><i class="fas fa-seedling"></i> le parc Athéna,</div>
+                            <div class="text-break"><i class="fas fa-seedling"></i> le parc de la Moline</div>
+                            <div class="text-break"><i class="fas fa-seedling"></i> ou celui de la Corniche de Séon…</div>
+                        </div>
+                        <div class="text-break pt-4">
+                            Ce patrimoine est complété par un maillage d’environ
+                            <div class="d-inline fw-bolder">273 squares et jardins. </div>
+                            Ces espaces sont équipés de 
+                            <div class="d-inline fw-bolder">132 aires de jeux </div>
+                            qui proposent une gamme variée de structures ludiques permettant à tous de bénéficier de lieux de détente à proximité de leur domicile.
+                        </div>
+                        <div class="text-break pt-4">
+                            Ces espaces d’échanges et de rencontres jouent un rôle social important. Ils contribuent aussi à la création de corridors biologiques, qui assurent 
+                            <div class="d-inline fw-bolder">l’installation et la pérennisation en zone urbaine d’une faune et d’une flore </div>
+                            essentiels pour notre cadre de vie.
+                        </div>
+                    </div>
+                </div>
+
                 </div>
                 <div
                 class="tab-pane fade"
                 id="ex3-tabs-2"
                 role="tabpanel"
                 aria-labelledby="ex3-tab-2"
+                >
+                <div class="container pt-5 justify-content-center">
+                    <div class="row col-12 text-center">
+                        <div class="d-inline fs-4 fw-bolder">
+                            Horaires d'ouverture et fermeture des parcs et jardins
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="container pt-5 justify-content-center">
+                    <div class="row col-12 ">
+                        <div class="text-break fw-bold">
+                            Fermeture à 18h30 à compter du 1er octobre 2021 de tous les parcs (sauf exceptions mentionnées) - (fermeture de la denière porte du parc à 18h30).
+                        </div>
+            
+                        <div class="text-break pt-4">
+                            CAS PARTICULIERS
+                            <div class="text-break pt-2">
+                                <div class="d-inline">
+                                    <i class="fas fa-seedling"></i>
+                                    <div class="d-inline fw-bolder"> Parc Borély <div class="d-inline fw-lighter">: ouvert toute l'année de </div>6h à 21h</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-seedling"></i>
+                                    <div class="d-inline fw-bolder"> Jardin du Pharo <div class="d-inline fw-lighter">: ouvert toute l'année de </div>7h à 21h</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-seedling"></i>
+                                    <div class="d-inline fw-bolder"> Parcs 
+                                        <div class="d-inline fw-lighter">
+                                            Parc balnéaire du Prado (8e), Bonneveine (8e), Corbusier (8e), Henri Fabre (8e), Pastré (8e),Valbarelle (8e), Colline Saint-Joseph (9e), Bruyères (10e), Vieux Moulin (10e), Mirabelle (12e), Athéna (13e), Marie du 13e, La Ravelle (13e), Saint-Théodore (13e),  Val Plan (13e), L'Espérance (14e), Font-Obscure (14e), Grand Séminaire (14e), Brégante (15e), Jougarelle (15e), la Calade (15e) , L'Oasis (15e), Varella (15e),  Espace Mistral (16e), La Pelouque (16e) 
+                                        </div>
+                                        Ouverts toute l'année 24/24h. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="text-break pt-4">
+                            À NOTER POUR L'ENSEMBLE DES PARCS ET JARDINS
+                            <div class="text-break pt-2">
+                                <div class="d-inline">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div class="d-inline fw-bolder"> L'évacuation du public débute 1/2 d'heure avant l'heure de fermeture légale.</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div class="d-inline"><div class="d-inline fw-bolder">Les aires de jeux</div>sont utilisables mais restent placées sous la responsabilité des parents, qui doivent s'assurer du respect des consignes sanitaires et notamment la distanciation physique.</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div class="d-inline"><div class="d-inline fw-bolder">les pique-niques</div>sont autorisés dans les parcs publics sous condition du respect de la distanciation sociale, le regroupement ne doit pas être supérieur à 10 personnes.</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div class="d-inline"><div class="d-inline fw-bolder">En cas de circonstances exceptionnelles</div>, notamment météorologiques, ou pour tout motif d'intérêt général, en particulier pour des raisons de sécurité, l'accès aux parcs et jardins publics peut être interdit partiellement ou en totalité et son évacuation décidée.</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div class="d-inline"><div class="d-inline fw-bolder">La circulation piétonne</div> est prioritaire dans tous les espaces verts.</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div class="d-inline"><div class="d-inline fw-bolder">L'accès, la circulation et le stationnement de tout véhicule ou engin à moteur</div> (thermique et/ou électrique), des cycles et de façon générale de tout véhicule susceptible de compromettre la sécurité et la tranquillité des promeneurs sont interdits (sauf dispositions contraires).</div>
+                                </div>
+                                <div class="text-break">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div class="d-inline"> Pour des raisons de sécurité, 
+                                        <div class="d-inline fw-bolder">les barbecues sont interdits</div>
+                                        dans les parcs et jardins marseillais. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="text-break pt-4 fw-bold">
+                            Peut-on prendre des photos à l'intérieur des parcs et jardins ?
+                        </div>
+                        <div class="d-inline pt-2">
+                            <i class="fas fa-leaf"></i>
+                            <div class="d-inline">oui, à titre privé</div>
+                        </div>
+                        <div class="d-inline">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div class="d-inline">non, si c'est dans un but commercial. Dans ce cas, une autorisation est nécessaire.</div>
+                            <div class="text-break">Elle doit être demandée au service Images et Médias – "Maison diamantée" – 3 rue de la Prison  – 13002 Marseille</div>
+                        </div>
+            
+                        <div class="text-break pt-4 fw-bold">
+                            Admission des animaux à l'intérieur des parcs et jardins
+                        </div>
+                        <div class="d-inline pt-2">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div class="d-inline">L’accès des animaux de compagnie est strictement interdit dans les parcs et jardins.</div>
+                            <div class="text-break">Cependant, l’accès est autorisé dans certains espaces clos ou non clos. Les conditions d’accès sont, dans ce cas, affichées aux entrées des espaces concernés.</div>
+                        </div>
+                        <div class="d-inline">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div class="d-inline">Les chiens de 2e catégorie doivent obligatoirement être tenus en laisse et muselés.</div>
+                        </div>
+                        <div class="d-inline">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div class="d-inline">Les chiens de 1ère catégorie sont, quant à eux, strictement interdits.</div>
+                        </div>
+                        <div class="d-inline pb-5">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div class="d-inline">Les chiens de personnes malvoyantes, d’assistance aux personnes en situation de handicap, des services de police et de sauvetage sont autorisés dans tous les espaces verts de la Ville de Marseille.</div>
+                        </div>
+                    
+            
+                    </div>
+                    
+                </div>
+                </div>
+                <div
+                class="tab-pane fade"
+                id="ex3-tabs-3"
+                role="tabpanel"
+                aria-labelledby="ex3-tab-3"
                 >
                 <!-- Filter list Grid with parallax start -->
                 <div uk-filter="target: .js-filter">
@@ -131,7 +346,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Le Parc Borely</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay1">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Ouvert tous les jours de 6h à 21h</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Avenue du Prado, 13008 Marseille</p>
@@ -149,7 +364,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">La Jardin Botanique</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay2">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">du mardi au vendredi de 12h à 17h30</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light">les samedis, dimanches et jours fériés de 10h à 17h30</p>
@@ -168,7 +383,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Parc Longchamp</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay3">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">du mardi au vendredi de 12h à 18h30</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light">les samedis, dimanches et jours fériés de 10h à 18h30</p>
@@ -186,7 +401,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Palais Pastré</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay4">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">du mardi au vendredi de 12h à 19h30</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light">les samedis, dimanches et jours fériés de 10h à 19h30</p>
@@ -204,7 +419,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Jardin de Corbières</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay5">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">ouvert toute l'année 24/7</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Route du Rove, 13016 Marseille</p>
@@ -221,7 +436,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Parc du 26ème centenaire</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay6">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light">ouvert toute l'année 24/7</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Rond-point Zino Francescatti, 13010 Marseille</p>
@@ -238,7 +453,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Jardin du Pharo</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay7">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Du 1er janvier au 31 décembre de 7h à 21h</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Boulevard Charles Livon, 13007 Marseille</p>
@@ -255,7 +470,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Jardin du Bois Sacré</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay8">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Ouvert toute l'année 24h/7</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Rue du Bois Sacré, 13007 Marseille</p>
@@ -272,7 +487,7 @@
                                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                         <p class="uk-h4 uk-margin-remove fs-5">Jardin de la Colline du Puget</p>
                                         <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay9">
-                                            <i class="fas fa-eye"></i>
+                                            <i class="fas fa-eye fa-lg"></i>
                                         </button>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-3">Ouvert tous les jours de 6h à 18h30</p>
                                         <p class="uk-h4 uk-margin-remove fs-6 fw-light pt-1">Rue Abbé D'Assy, 13007 Marseille</p>
@@ -692,8 +907,10 @@
     <!-- Footer section start -->
     <footer>
         <div class="container">
-            <div class="row justify-content-center pt-5 pb-5">    
-                <a class="uk-button uk-button-default" href="#top" uk-scroll>Retour en haut de la page</a>
+            <div class="row justify-content-center uk-text-center pt-5 pb-5">
+                <div class="text-white">
+                    <a class="uk-button uk-button-default to-the-top" href="#top" uk-scroll>Retour en haut de la page</a>
+                </div>
             </div>
         </div>
     </footer>

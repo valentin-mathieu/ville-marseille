@@ -1,8 +1,12 @@
+body {
+    background-color : white !important;
+}
+
 p {
     color: green;
 }
 
-.fa-seedling, .fa-pagelines, .fa-water, .fa-map, .fa-tree, .fa-chess-rook {
+.fa-seedling, .fa-pagelines, .fa-water, .fa-map, .fa-tree, .fa-chess-rook, .fa-leaf, .fa-file, .fa-exclamation-circle {
     color: green;
 }
 
@@ -51,3 +55,12 @@ p {
     color: green !important;
     box-shadow: 0 15px 15px rgb(0 0 0 / 20%);
 }
+
+.to-the-top {
+    color: white;
+    background-color: darkgreen;
+}
+
+/* .uk-button-default {
+    color: white;
+} */
