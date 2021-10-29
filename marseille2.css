@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Scheherazade+New:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+main{
+    margin-top: 100px;
+}
+.haut{
+    height: 90vh;
+    text-align: center;
+    color: white;
+    font-family:"Scheherazade New" ;
+}
+.bg{
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    opacity: 0.89;
+}
+.haut h2{
+    font-size: 1.7rem;
+    padding-top: 260px;
+    font-size: 2.3rem;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.692);
+    font-family: "Montserrat";
+}
+.global{
+    padding: 100px;
+    
+}
+
+.listeCal ul li{
+    display: inline;
+}
+.listeCal ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: "Bebas Neue";
+    font-size: 1.4rem;
+    margin: 0px 20px;
+    background: #34a0a4ee;
+    position: absolute;
+    width: 95%;
+    margin-top: -17px;
+}
+.listeCal a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #99d98c;
+}
+.listeCal a:hover{  
+    font-size: 1.6rem;
+}
+.global h3{
+    padding: 100px 30px 30px 30px;
+    font-size: 2.2rem;
+    color: black;
+    text-shadow: 2px 2px 2px #1e5f918e;
+    font-family: "Noto Sans Display";
+}
+.global h4{
+    text-align: center;
+    margin: 20px;
+    font-size: 1.9rem;
+    color: #1e6091;
+    font-family: "Roboto";
+}
+.acces{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+.acces p{
+     text-align: justify;                       
+}
+.global p{
+    width: 45%;
+    font-family: "Lato";
+    font-size: 1.1rem;   
+    line-height: 1.7rem;
+}
+
+.maps:hover{
+    height: 300px;
+    cursor: pointer;
+}
+main img{
+    box-shadow: 1px 1px 4px 3px #00000073;
+}
+.ps p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    border: solid 4px #2d8591;
+    margin-top: 5px;
+}
+
+.slider{
+    overflow: hidden;
+    width: 70%;
+    margin: 50px auto 50px auto;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+.slider figure img{
+    float: left;
+    width: 20%;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    30%{
+        left: 0;
+    }
+    33%{
+        left: -100%;
+    }
+    63%{
+        left: -100%;
+    }
+    66%{
+        left: -200%;
+    }
+    97%{
+        left: -200%;
+    }
+    100%{
+        left: -300%;
+    }
+
+}
+.img-bas{
+    margin: 35px;
+    text-align: center;
+}
+.randonneur{
+    box-shadow: none;
+    position: absolute;
+    margin-left: 1150px;
+    margin-top: 20px;
+}
